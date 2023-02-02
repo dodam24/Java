@@ -6,7 +6,7 @@ public class Calc {
 		int a;
 		a = 320;
 		//System.out.println(a);
-		
+		//123
 		int b;
 		b = 258;
 		//System.out.println(b);
