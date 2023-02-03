@@ -6,48 +6,43 @@ import java.util.Scanner;
 public class Salary {
 
 	public static void main(String[] args) {
-		//[실행결과]
-		Scanner scan = new Scanner(System.in);
+		
+		//실행 결과
+		Scanner sc = new Scanner(System.in);
+		DecimalFormat df = new DecimalFormat();	//3자리마다 쉼표 찍기
+		
+		String name, position;
+		int basePay, extraPay, total, tax, salary;
+		double taxRate;
+		
+		
 		System.out.print("이름 입력 : ");
-		String name = scan.nextLine();
+		name = sc.nextLine();	//sc.next도 가능 (nextLine은 자동 줄 바뀜)
+		
 		System.out.print("직급 입력 : ");
-		String position= scan.nextLine();
+		position= sc.nextLine();
+		
 		System.out.print("기본급 입력 : ");
-		int base = scan.nextInt();
+		basePay = sc.nextInt();
+		
 		System.out.print("수당 입력 : ");
-		int timepay = scan.nextInt();
+		extraPay = sc.nextInt();
 		
-	
-		
-		//if문
-		int sum = base + timepay;
-		double tax;
-		
-		if(sum >= 5000000) {
-			tax = sum * 0.03;
-		}
-		else if(sum >= 3000000){
-			tax = sum * 0.02;
-		}
-		else {
-			tax = sum * 0.01;
-		}
+		total = basePay + extraPay;
+		taxRate = total>=5000000 ? 0.03 : total>=300000 ? 0.02 : 0.01;
+		tax = (int)(total * taxRate);	//정수 + 실수 계산 안되므로 강제 형변환	
+		salary = total - tax;
 		
 		
-		double month = sum - tax;
-	
-		DecimalFormat df = new DecimalFormat();
-		
-		
-		//출력
+		//결과 출력
 		System.out.println("*** " + name + "\t" + position + " 월급 ***");
-		System.out.println("기본급 : " + df.format(base) + "원");
-		System.out.println("수당 : " + df.format(timepay) + "원");
-		System.out.println("합계 : " + df.format(sum) + "원");
+		System.out.println("기본급 : " + df.format(basePay) + "원");
+		System.out.println("수당 : " + df.format(extraPay) + "원");
+		System.out.println("합계 : " + df.format(total) + "원");
 		System.out.println("세금 : " + df.format(tax) + "원");
-		System.out.println("월급 : " + df.format(month) + "원");
+		System.out.println("월급 : " + df.format(salary) + "원");
 	}
-
+		
 }
 
 /*

@@ -5,20 +5,24 @@ public class Dice {
 	public static void main(String[] args) {
 		int dice1, dice2;
 		
-		//System.out.println(Math.random() * (y-x+1)+ x );
-		
-		dice1 = (int)(Math.random() * 6) + 1;
+		dice1 = (int)(Math.random() * 6) + 1;	//1~6 사이의 난수
 		dice2 = (int)(Math.random() * 6) + 1;
-		System.out.println("주사위1 : " + dice1 + "주사위2 : " + dice2);
-		if(dice1>dice2) {
+		System.out.println("주사위1 : " + dice1 + "\t\t주사위2 : " + dice2);
+		
+		/*
+		if(dice1 > dice2) {
 			System.out.println("주사위1 승");
 		}
-		else if(dice1<dice2){
+		else if(dice1 < dice2) {
 			System.out.println("주사위2 승");
 		}
 		else {
 			System.out.println("무승부");
 		}
+		*/
+		
+		String result = dice1 > dice2 ? "주사위1 승" : dice1 < dice2 ? "주사위2 승" : "무승부";
+		System.out.println(result);
 	}
 
 }
