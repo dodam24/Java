@@ -7,7 +7,7 @@ public class For02 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("원하는 단을 입력 : ");
+		System.out.print("원하는 단을 입력 : ");
 		int dan = scan.nextInt();
 		
 		for(int i=1; i<=9; i++) {

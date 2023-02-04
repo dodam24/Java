@@ -3,8 +3,21 @@ package for_;
 public class For05 {
 
 	public static void main(String[] args) {
+		int count = 0;
 		
-
+		for (int i = 1; i <= 100; i++) {
+			int random = (int)(Math.random() * (90 - 65 + 1) + 65);
+			System.out.print((char)random + " ");
+			
+			
+			if(i % 10 == 0) {
+				System.out.println();
+			}
+			if(random == 65) {
+				count ++;
+			}
+		}
+			System.out.println("\n A의 개수 = " + count);
 	}
 
 }

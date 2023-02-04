@@ -1,10 +1,20 @@
 package for_;
 
+import java.util.Scanner;
+
 public class For06 {
 
 	public static void main(String[] args) {
 		
-
+		System.out.println("숫자 입력 : ");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		
+		int fac = 1;
+		for(int i=num; i>=1; i--) {
+			fac *= i;
+		}
+		System.out.println(num + "! = " + fac);
 	}
 
 }

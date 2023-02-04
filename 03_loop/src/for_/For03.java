@@ -11,8 +11,8 @@ public class For03 {
 			sum += i;		//sum = sum + i
 			//System.out.println(i + "\t" + sum );
 	
-			mul *= i;		//mul = mul + i
-			System.out.println(i * sum);
+			mul *= i;		//mul = mul * i
+			System.out.println("i * sum = " + i * sum);
 		}
 			System.out.println();
 			
@@ -26,10 +26,9 @@ public class For03 {
 		
 		i=3;
 		sum = sum+1;	//6
-		
-		
-		
-		
+		.
+		.
+		.
 		i=10;
 		sum = sum+10;	//55
 		*/
