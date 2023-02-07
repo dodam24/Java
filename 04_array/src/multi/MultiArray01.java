@@ -4,6 +4,7 @@ public class MultiArray01 {
 
 	public static void main(String[] args) {
 		int[][] ar = new int[3][2];
+		
 		ar[0][0] = 10;
 		ar[0][1] = 20;
 		
@@ -16,9 +17,9 @@ public class MultiArray01 {
 		for(int i=0; i<ar.length; i++) {
 			for(int j=0; j<ar[i].length; j++) {
 				System.out.println("ar[" + i + "][" + j + "] = " + ar[i][j]);
-			}	// for j
+			} // for j
 			System.out.println();
-		}	// for i 
+		} // for i 
 
 	}
 

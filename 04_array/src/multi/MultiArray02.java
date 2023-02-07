@@ -10,9 +10,9 @@ public class MultiArray02 {
 		for(int i=0; i<ar.length; i++) {
 			for(int j=0; j<ar[i].length; j++) {
 				num++;
-				ar[j][i] = num;
-			}	// for j 
-		}	// for i
+				ar[i][j] = num;
+			} // for j 
+		} // for i
 		
 //		ar[0][0] = 1;	ar[0][1] = 11;
 //		ar[1][0] = 2;	ar[1][1] = 12;
@@ -24,8 +24,8 @@ public class MultiArray02 {
 //		for(int j=0; j<ar[i].length; j--) {
 //			num++;
 //			ar[i][j] = num;
-//		}	// for j 
-//	}	// for i
+//		} // for j 
+//	} // for i
 //		
 //		ar[9][9] = 1;	ar[8][9] = 11;
 //		ar[9][9] = 2;	ar[8][8] = 12;
@@ -36,9 +36,9 @@ public class MultiArray02 {
 		for(int i=0; i<ar.length; i++) {
 			for(int j=0; j<ar[i].length; j++) {
 				System.out.print(String.format("%4d", ar[i][j]));
-			}	// for j
+			} // for j
 			System.out.println();
-		}	// for i 
+		} // for i 
 
 	}
 
