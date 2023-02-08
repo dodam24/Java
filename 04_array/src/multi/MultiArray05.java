@@ -5,10 +5,9 @@ import java.util.Scanner;
 public class MultiArray05 {
 
 	public static void main(String[] args) {
-		//총점, 평균, 이름, 과목수, 과목명, 점수
+		//name, subjectCnt, subject, jumsu 선언
 		String name, subject;
-		int sum, jumsu, subjectCnt;
-		double avg;
+		int subjectCnt, jumsu;
 		
 		int[][] ar = new int[2][];
 		ar[0] = new int[5];
@@ -18,30 +17,29 @@ public class MultiArray05 {
 		System.out.println("인원수 : ");
 		int cnt = scan.nextInt(); 
 		
-		for(int i=0; i<ar.length; i++) {
-		ar[0][0] = 
-		ar[0][1] = 95;
-		ar[0][2] = 100;
-		ar[0][3] = 
-		ar[0][4] =
 		
-		ar[1][0] =
-		ar[1][1] = 95;
-		ar[1][2] = 100;
-		ar[1][3] = 90;
-		ar[1][4] =
-		ar[1][5] =
+		for(int i=0; i<cnt; i++) {
+			System.out.print("이름입력 : ");
+				name = scan.next();
+			System.out.print("과목수 입력 : ");
+				subjectCnt = scan.nextInt();
 		
-		//int sum = [0][1] + [0][2] + [0][3] - 홍길동
-		//		    [1][1] + [1][2] + [1][3] - 이기자
-		for(int i=0; i<ar.length; i++) { // 0,1 [2]
-			for(int j=0; j<ar[i].length; j++) { //0~4, 0~5 -> [5],[6]
-				System.out.println("ar[" + i + "][" + j + "] = " + ar[i][j]);
-				}
-			System.out.println();
+			for(int j=0; j<subjectCnt; j++) {
+				System.out.print("과목명 입력 : ");
+					subject = scan.next();
+				System.out.print("점수 입력 : ");
+					jumsu = scan.nextInt();
+				
 			}
+			
+			
 		}
 		
+		
+		
+		
+		
+
 	}
 }
 
@@ -71,9 +69,9 @@ public class MultiArray05 {
 ---------------------
 
 이름     국어     영어   총점     평균
-홍길동    95     100    xxx     xx.xx
+홍길동    95     100    xxx    xx.xx
 
 이름     국어  	영어   과학    총점      평균
-이기자   95   	100   90     xxx      xx.xx
+이기자    95   	100    90    xxx      xx.xx
 
 */
