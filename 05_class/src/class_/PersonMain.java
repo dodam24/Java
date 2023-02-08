@@ -4,7 +4,7 @@ class Person {
 	private String name; //필드, 초기값
 	private int age;
 	
-	public void setName(String n) {//메소드 직접 구현 (public 결과형 메소드명(인수형 인수))
+	public void setName(String n) {//메소드 직접 구현: public 결과형 메소드명(인수형 인수)
 		name = n;
 	}
 	
