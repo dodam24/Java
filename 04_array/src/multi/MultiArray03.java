@@ -10,18 +10,18 @@ public class MultiArray03 {
 		
 		// 총점, 평균, 학점
 		for(int i=0; i<jumsu.length; i++) {
-			for(int j=0; j<jumsu[i].length-1; j++) {	// 총점 부분은 돌아가지 않으므로 length-1
-				jumsu[i][3] += jumsu[i][j];		// 총점
-			}	// for j
+			for(int j=0; j<jumsu[i].length-1; j++) {
+				jumsu[i][3] += jumsu[i][j];	// 총점
+			} // for j
 			
-			avg[i] = (double)jumsu[i][3] / 3;	// 평균
+			avg[i] = (double)jumsu[i][3] / 3; // 평균
 			
 			if(avg[i] >= 90) grade[i] = 'A';
 			else if(avg[i] >= 80) grade[i] = 'B';
 			else if(avg[i] >= 70) grade[i] = 'C';
 			else if(avg[i] >= 60) grade[i] = 'D';
 			else grade[i] = 'F';		
-		}	// for i 
+		} // for i 
 		
 		// 출력
 			System.out.println("---------------------------------------------------");
@@ -29,11 +29,11 @@ public class MultiArray03 {
 			System.out.println("---------------------------------------------------");
 			for(int i=0; i<jumsu.length; i++) {
 				System.out.print(name[i] + "\t");
-			for(int j=0; j<jumsu[i].length; j++) {	// 국어, 영어, 수학, 총점
+			for(int j=0; j<jumsu[i].length; j++) { // 국어, 영어, 수학, 총점
 				System.out.print(jumsu[i][j] + "\t");
-			}	// for j
+			} // for j
 			System.out.println(String.format("%.2f", avg[i]) + "\t" + grade[i]);
-		}	// for i
+		} // for i
 			System.out.println("---------------------------------------------------");
 	}
 }
