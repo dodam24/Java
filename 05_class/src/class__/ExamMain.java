@@ -5,26 +5,32 @@ import java.util.Scanner;
 public class ExamMain {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		System.out.println("인원수 입력 : ");
-		int cnt = scan.nextInt();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("인원수 입력 : ");
+		int cnt = sc.nextInt();
 	
+		//객체 배열
 		Exam[] ar = new Exam[cnt];
-		for(int i=0; i<cnt; i++) {
-			System.out.print("이름 입력 : ");
-			String name = scan.next();
-			System.out.print("답 입력 : ");
-			String dap = scan.next();
+		
+		//입력
+		for(int k=0; k<ar.length; k++) {
+			ar[k] = new Exam();
+			ar[k].compare();
 			System.out.println();
-			
-			//클래스 생성(?)
+		} //for k
+		
+		//출력
+		System.out.println("이름\t 1 2 3 4 5 \t점수");
+		for(Exam e : ar) {
+			System.out.print(e.getName() + "\t");
+			for(int i=0; i<e.getOx().length; i++) {
+				System.out.print(e.getOx()[i] + " ");
+			} //for i
+			System.out.println("\t" + e.getScore());
+				
 		}
-		
-		//출력(?)
-		System.out.println("이름   1   2   3   4   5   점수"); 
-		
-		//객체배열 이용
-
+			
 	}
 	
 }
