@@ -4,29 +4,36 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
-class CalendarEx {
+class CalendareEx{
+	public CalendarEx() {	// 기본 생성자: 월, 일 입력 
+		Scanner scan = new Scanner(System.in);
+		System.out.print("년도 입력 : ");
+		year = scan.nextInt();
+		System.out.print("월 입력 : ");
+		month = scan.nextInt();
+}
+
+	public void calc() {
+		Calendar cal = Calendar.getInstance();
+		int year = cal.get(cal.YEAR);
+		int month = cal.get(cal.MONTH);
+		int day = cal.get(cal.DAY_OF_MONTH);
+	}
 	
-	
+	public void display() {
+
+		System.out.println();
+		System.out.println("일   월   화   수   목   금   토");
+		}
 }
 
 public class CalendarMain {
 
 	public static void main(String[] args) {
+		CalendarEx ce = new CalendarEx();
+		ce.calc();
+		ce.display();
 		
-		Scanner scan = new Scanner(System.in);
-		Calendar cal = Calendar.getInstance();
-		// int year, month, day;
-		
-		int year = cal.get(cal.YEAR);
-		int month = cal.get(cal.MONTH);
-		int day = cal.get(cal.DAY_OF_MONTH);
-		
-		System.out.print("년도 입력 : ");
-		year = scan.nextInt();
-		System.out.print("월 입력 : ");
-		month = scan.nextInt();
-		System.out.println();
-		System.out.println("일   월   화   수   목   금   토");
 		
 	}
 
