@@ -27,6 +27,9 @@ public class ComputeService {
 			else if(num == 2) com = new Sub();
 			else if(num == 3) com = new Mul();
 			else if(num == 4) com = new Div();
+			
+			com.disp();
+			
 		} // while
 	} // menu()
 }

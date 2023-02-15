@@ -28,7 +28,7 @@ public class SungJukService {
 				
 				if(num == 1) sungJuk = new SungJukInsert(); // 부모 = 자식
 				else if(num == 2) sungJuk = new SungJukList();
-				else if(num == 3);
+				else if(num == 3) sungJuk = new SungJukUpdate();
 				else if(num == 4);
 				else if(num == 5);
 				else {

@@ -75,5 +75,9 @@ public class SungJukDTO { // 1인분
 		this.avg = avg;
 	}
 
+	@Override
+	public String toString() {
+		return no + "\t" + name + "\t" + kor + "\t" + eng + "\t" + math + "\t" + tot + "\t" + avg + "\t";
+	}
 
 }

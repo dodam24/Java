@@ -1,7 +1,5 @@
 package sungJuk;
 
-import interface_.ComputeService;
-
 public class SungJukMain {
 
 	public static void main(String[] args) {
@@ -76,6 +74,13 @@ Class     : SungJukDTO.java - 1인분
 수정하였습니다.
 
 6. SungJukDelete.java
+- 없는 번호가 입력되면 "잘못된 번호 입니다." 라고 출력한다.
+
+번호 입력 :
+잘못된 번호 입니다.
+
+또는
+삭제하였습니다.
 
 7. SungJukSort.java
 
