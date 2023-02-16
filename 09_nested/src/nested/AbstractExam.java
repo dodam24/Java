@@ -1,5 +1,7 @@
 package nested;
 
-public class AbstractExam {
+public abstract class AbstractExam {
+	public void cc() {} // 빈 body
+	public void dd() {}
 
 }
