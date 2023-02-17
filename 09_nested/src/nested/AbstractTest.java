@@ -1,7 +1,7 @@
 package nested;
 
 public abstract class AbstractTest { // POJO 형식
-	private String name;
+	/*private*/ String name;
 
 	public String getName() {
 		return name;
