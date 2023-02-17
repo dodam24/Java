@@ -1,7 +1,8 @@
 package member;
 
 public class MemberMain {
-
+	private long serialVersionUID = 1L;
+	
 	public static void main(String[] args) {
 		MemberService memberService = new MemberService();
 		memberService.menu();
